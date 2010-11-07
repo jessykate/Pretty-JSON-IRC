@@ -1,0 +1,18 @@
+<style>
+.speaker {
+    color: #993333;
+}
+a {
+    color: #336699;
+}
+</style>
+<html>
+<head>
+<title>IRC Logs for #p2pu-dev</title>
+</head>
+<body>
+{% for line in formatted %}
+<em>({{ line['date'] }})</em> <b class="speaker">{{ line['speaker'] }}</b> {{ line['string'] }}<br>
+{% end %}
+</body>
+</html>
